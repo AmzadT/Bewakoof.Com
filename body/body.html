@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="body.css">
+    <link rel="stylesheet" href="./body.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <div id="slider-box">
+
+        <div>
+            <a href="https://www.bewakoof.com/campaign/mad-diwali-sale"><img src="https://images.bewakoof.com/uploads/grid/app/MAD-Diwali-sale-Common-1x1-Banner-1699430015.jpg" alt=""></a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/men-joggers?category=joggers&manufacturer_brand=bewakoof%C2%AE_bewakoof__air%C2%AE__1.0"><img src="https://images.bewakoof.com/uploads/grid/app/NEW-1x1-Joggers-1699357840.jpg" alt=""></a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/bewakoof-air?gender=women&category=joggers"><img src="https://images.bewakoof.com/uploads/grid/app/Knit-CargoPants-1x1-Banner-1699357838.jpg" alt=""></a>
+        </div>
+
+    </div>
+
+
+    <div class="parent">
+
+        <div>
+
+           <a href="https://www.bewakoof.com/new-arrivals?sort=new">
+            <img src="https://images.bewakoof.com/uploads/grid/app/category-icon-for-Desktop--1--1697613232.jpg" alt="">
+            <p>New Arrivals</p>
+           </a>
+           
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/bestseller?sort=new">
+            <img src="https://images.bewakoof.com/uploads/grid/app/category-icon-for-msite-Desktop-1697613234.jpg" alt="">
+            <p>Bestsellers</p>
+            </a>
+        </div>
+
+        <div>
+           <a href="https://www.bewakoof.com/campaign/official-collaborations">
+            <img src="https://images.bewakoof.com/uploads/grid/app/category-icon-for-Desktop---1--1697613231.jpg" alt="">
+            <p>Official Collaborations</p>
+           </a>
+        </div>
+
+        <div>
+           <a href="https://www.bewakoof.com/winter-wear-collection?category=sweatshirt_hoodies_jacket_sweater&sizes=XS_S_M_L_XL_2XL_3XL&manufacturer_brand=bewakoof%C2%AE_bewakoof__air%C2%AE__1.0_bewakoof__heavy__duty%C2%AE__1.0">
+            <img class="rd" src="https://images.bewakoof.com/uploads/grid/app/category-icon-for-Desktop-Winterwear-1698217139.jpg" alt="">
+            <p>Winterwear</p>
+           </a>
+        </div>
+
+        <div>
+           <a href="https://www.bewakoof.com/custom-tshirts">
+            <img src="https://images.bewakoof.com/uploads/grid/app/thumbnails-Revamp-Customization--1--1693212866.jpg" alt="">
+            <p>Customization</p>
+           </a>
+        </div>
+
+        <div>
+           <a href="https://www.bewakoof.com/combos">
+            <img src="https://images.bewakoof.com/uploads/grid/app/thumbnails-Revamp-Combos-1693212865.gif" alt="">
+            <p>Combos</p>
+           </a>
+        </div>
+
+        <div>
+           <a href="https://www.bewakoof.com/vote">
+            <img src="https://images.bewakoof.com/uploads/grid/app/thumbnails-Revamp-Vote-1693212866.jpg" alt="">
+           <p>Vote for Designs</p>
+           </a>
+        </div>
+
+        <div>
+           <a href="https://www.bewakoof.com/campaign/last-sizes-left">
+            <img src="https://images.bewakoof.com/uploads/grid/app/last-size-new-thumbnaik-1668508337.jpg" alt="">
+           <p>Last Sizes Left</p>
+           </a>
+        </div>
+
+    </div>
+
+    <div class="gif">
+        <a href="https://www.bewakoof.com/bestseller">
+            <img src="https://images.bewakoof.com/uploads/grid/app/brand-strip-1683780891-1684740361.gif" alt="">
+        </a>
+    </div>
+
+    <h3>Designs of the Week</h3>
+
+    <div class="gif-2">
+        <a href="https://www.bewakoof.com/campaign/designs-of-the-week-women">
+            <img class="double1" src="https://images.bewakoof.com/uploads/grid/app/DOTW-Split-banner-Desktop-Men--4--1698728259.jpg" alt="">
+            <img class="double2" src="https://images.bewakoof.com/uploads/grid/app/DOTW-Split-banner-Desktop-Women--4--1698728259.jpg" alt="">
+        </a>
+    </div>
+
+    <div>
+        <a href="https://www.bewakoof.com/master-url?product_discount=65">
+            <img class="gif-3" src="https://images.bewakoof.com/uploads/grid/app/Flat-65---off-Blockbuster-deal-desktop-1698819668.jpg" alt="">
+        </a>
+    </div>
+
+    <h4>TRENDING CATEGORIES</h4>
+
+    <div id="pics">
+
+        <div>
+            <a href="https://www.bewakoof.com/men-printed-tshirts">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-printed-tees-m-1685445850.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/oversized-t-shirts-for-men">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-oversized-tees-m-1685086219.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/men-shorts">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-shorts-1686063035.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/men-joggers">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-joggers-m-1684997505.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/men-vests?manufacturer_brand=bewakoof%C2%AE">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-vests-1686063036.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/men-full-sleeve-t-shirts">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-fullsleeve-1686063034.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/women-printed-t-shirts">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-printed-tees-w-1685445851.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/oversized-t-shirts-for-women">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-Oversized-tshirts-Women-1682055634.png" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/fashion-tops">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-fashion-tops-1686305660.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/women-joggers-sweatpants?manufacturer_brand=bewakoof%C2%AE_bewakoof__air%C2%AE__1.0">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-Joggers-Women-1682055633.png" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/women-dresses?manufacturer_brand=bewakoof%C2%AE">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-WOMEN-Dresses-1681725004.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/women-boyfriend-tshirts">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-D-240x350-WOMEN-BoyfriendTeess-1681730084.jpg" alt="">
+            </a>
+        </div>
+
+    </div>
+
+    <h4>Bewakoof Originals</h4>
+
+    <div id="orgnl">
+        <div>
+            <a href="https://www.bewakoof.com/bewakoof-heavy-duty">
+                <img src="https://images.bewakoof.com/uploads/grid/app/Banner-PC-Size-480x457-Heavy-Duty-1699249579.jpg" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="https://www.bewakoof.com/bewakoof-american-pima">
+                <img src="https://images.bewakoof.com/uploads/grid/app/Banner-PC-Size-480x457-American-PIMA-1699249579.jpg" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="https://www.bewakoof.com/windcheater-jackets">
+                <img src="https://images.bewakoof.com/uploads/grid/app/Banner-PC-Size-480x457-1699249580.jpg" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="https://www.bewakoof.com/bewakoof-heavy-duty">
+                <img src="https://images.bewakoof.com/uploads/grid/app/Banner-PC-Size-480x457-Heavy-Duty-1699249579.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <h4>TOO HOT TO BE MISSED</h4>
+
+    <div class="big-img">
+
+        <div>
+            <a href="https://www.bewakoof.com/sweaters">
+                <img src="https://images.bewakoof.com/uploads/grid/app/Sweaters-desktop-mid-size-banner-Common-1699357756.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/bewakoof-american-pima">
+                <img src="https://images.bewakoof.com/uploads/grid/app/desktop-mid-size-banner--Conflicted-copy-from-Abhira-s-MacBook-Pro-on-2023-11-07-10-46-25---1--1699359133.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+           <a href="https://www.bewakoof.com/buy-one-get-one-free">
+            <img src="https://images.bewakoof.com/uploads/grid/app/Midsize-Desktop-Banner-B1G1-FREE-1699265102.jpg" alt="">
+           </a>
+        </div>
+        
+        <div>
+            <a href="https://www.bewakoof.com/men-full-sleeve-t-shirts?fit=oversized__fit&design=graphic__print_printed">
+                <img src="https://images.bewakoof.com/uploads/grid/app/desktop-mid-size-banner-FS-1698990405.jpg" alt="">
+            </a>
+        </div>
+
+    </div>
+
+    <h4>CATEGORIES TO BAG</h4>
+
+    <div class="categories">
+
+        <div>
+            <a href="https://www.bewakoof.com/men-shirts">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-men-sshirts-1686063036.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/men-boxer-shorts">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-boxers-1685086219.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/men-pajamas">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box--m-pyjama-1685086220.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/women-co-ord-sets">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-women-cords-1686063032.jpg" alt="">
+            </a>
+        </div>
+        
+        <div>
+            <a href="https://www.bewakoof.com/women-pajamas">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-women-pjs-1686063033.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/women-shorts?sort=new">
+                <img src="https://images.bewakoof.com/uploads/grid/app/category-box-new-240x350-women-shorts-1686063034.jpg" alt="">
+            </a>
+        </div>
+
+    </div>
+
+    <div class="allNew">
+
+        <div>
+            <a href="https://www.bewakoof.com/buy-3-for-999">
+                <img src="https://images.bewakoof.com/uploads/grid/app/Sale-1x1-Banner-Buy-3-at-999-1699358417.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+           <a href="https://www.bewakoof.com/parachute-pants-for-women">
+            <img src="https://images.bewakoof.com/uploads/grid/app/1x1-Banner-Parachute-pants-1699360279.jpg" alt="">
+           </a>
+        </div>
+
+        <div>
+           <a href="https://www.bewakoof.com/pyjamas">
+            <img src="https://images.bewakoof.com/uploads/grid/app/NEW-1x1-Pyjamas-Common-1699250175.jpg" alt="">
+           </a>
+        </div>
+
+    </div>
+
+    <h4>TOP ACCESSORIES</h4>
+
+    <div class="accessories">
+
+        <div>
+            <a href="https://www.bewakoof.com/mobile-covers-india">
+                <img src="https://images.bewakoof.com/uploads/grid/app/360x524-accessories-categorybox-Mobile-covers-1694760545.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/slider-for-men-and-women?manufacturer_brand=bewakoof%C2%AE">
+                <img src="https://images.bewakoof.com/uploads/grid/app/360x524-accessories-categorybox-Sliders-1694760546.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/bags">
+                <img src="https://images.bewakoof.com/uploads/grid/app/360x524-accessories-categorybox-Backpacks-1694760544.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/caps">
+                <img src="https://images.bewakoof.com/uploads/grid/app/360x524-accessories-categorybox-Caps-1694760545.jpg" alt="">
+            </a>
+        </div>
+
+    </div>
+
+    <p class="best">BESTSELLERS</p>
+
+    <div id="shoping">
+
+        <div class="Buy">
+            <a href="https://www.bewakoof.com/p/nevy-blue-mens-plain-round-neck-t-shirt">
+                <img src="https://images.bewakoof.com/t320/men-s-blue-t-shirt-115-1659608420-1.jpg" alt="">
+            <div class="iconBW">
+                <p>Bewakoof <i class="fa-regular fa-registered R"></i> </p>
+                <i class="fa-regular fa-heart fp hrt"></i>
+            </div>
+
+            <p class="black">Men's Blue T-shirt</p>
+            <div class="mrp">
+                <i class="fa-solid fa-indian-rupee-sign rs"></i>
+                <p>349 <span><i class="fa-solid fa-indian-rupee-sign und">999</i>65% OFF</span></p>
+            </div>
+            </a>
+        </div>
+
+        <div class="Buy">
+            <a href="https://www.bewakoof.com/p/women-avoiding-responsibilities-graphic-printed-boyfriend-t-shirt-55">
+                <img src="https://images.bewakoof.com/t320/women-s-white-avoiding-responsibilities-graphic-printed-boyfriend-t-shirt-585772-1682403802-1.jpg" alt="">
+            <div class="iconBW">
+                <p>Bewakoof <i class="fa-regular fa-registered R"></i> </p>
+                <i class="fa-regular fa-heart fp hrt"></i>
+            </div>
+
+            <p class="black">Women's White Avoiding Responsibilities Graphic Printed T-shirt</p>
+            <div class="mrp">
+                <i class="fa-solid fa-indian-rupee-sign rs"></i>
+                <p>379 <span><i class="fa-solid fa-indian-rupee-sign und">1099</i>65% OFF</span></p>
+            </div>
+            </a>
+        </div>
+
+        <div class="Buy">
+            <a href="https://www.bewakoof.com/p/womens-black-expecto-graphic-printed-oversized-t-shirt">
+                <img src="https://images.bewakoof.com/t320/women-s-black-expecto-graphic-printed-oversized-t-shirt-589280-1694765596-1.jpg" alt="">
+            <div class="iconBW">
+                <p>Bewakoof <i class="fa-regular fa-registered R"></i> </p>
+                <i class="fa-regular fa-heart fp hrt"></i>
+            </div>
+
+            <p class="black">Women's Black Expecto Graphic Printrd Oversized T-shirt</p>
+            <div class="mrp">
+                <i class="fa-solid fa-indian-rupee-sign rs"></i>
+                <p>379 <span><i class="fa-solid fa-indian-rupee-sign und">1249</i>69% OFF</span></p>
+            </div>
+            </a>
+        </div>
+
+        <div class="Buy">
+            <a href="https://www.bewakoof.com/p/white-plain-full-sleeve-round-neck-men-t-shirt">
+                <img src="https://images.bewakoof.com/t320/men-s-white-t-shirt-1093-1672982318-1.jpg" alt="">
+            <div class="iconBW">
+                <p>Bewakoof <i class="fa-regular fa-registered R"></i> </p>
+                <i class="fa-regular fa-heart fp hrt"></i>
+            </div>
+
+            <p class="black">Men's White T-shirt</p>
+            <div class="mrp">
+                <i class="fa-solid fa-indian-rupee-sign rs"></i>
+                <p>549 <span><i class="fa-solid fa-indian-rupee-sign und">1199</i>54% OFF</span></p>
+            </div>
+            </a>
+        </div>
+
+        <div class="Buy">
+            <a href="https://www.bewakoof.com/p/mens-purple-beast-within-2-0-oversized-t-shirt">
+                <img src="https://images.bewakoof.com/t320/men-s-purple-beast-within-graphic-printed-oversized-t-shirt-581488-1694763256-1.jpg" alt="">
+            <div class="iconBW">
+                <p>Bewakoof <i class="fa-regular fa-registered R"></i> </p>
+                <i class="fa-regular fa-heart fp hrt"></i>
+            </div>
+
+            <p class="black">Men's Purple Beast Within Oversized T-shirt</p>
+            <div class="mrp">
+                <i class="fa-solid fa-indian-rupee-sign rs"></i>
+                <p>599 <span><i class="fa-solid fa-indian-rupee-sign und">1499</i>60% OFF</span></p>
+            </div>
+            </a>
+        </div>
+       
+    </div>
+      
+    <div class="a">
+        <a href="https://www.bewakoof.com/bestseller">Explore All</a>
+    </div>
+
+    <h4>OUR BEST PICKS</h4>
+
+    <div class="big-img">
+
+        <div>
+            <a href="https://www.bewakoof.com/combos">
+                <img src="https://images.bewakoof.com/uploads/grid/app/720x420-Midsize-bannner-Combos-1699277122.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+            <a href="https://www.bewakoof.com/bewakoof-air">
+                <img src="https://images.bewakoof.com/uploads/grid/app/Midsize-banner-720x420-1699355906.jpg" alt="">
+            </a>
+        </div>
+
+        <div>
+           <a href="https://www.bewakoof.com/campaign/custom-products">
+            <img src="https://images.bewakoof.com/uploads/grid/app/Customise-Desktop-midsize-Banner-1699360277.jpg" alt="">
+           </a>
+        </div>
+        
+        <div>
+           <a href="https://www.bewakoof.com/campaign/plus-size-store">
+            <img src="https://images.bewakoof.com/uploads/grid/app/Plus-Size-Desktop-midsize-Banner--1--1699360278.jpg" alt="">
+           </a>
+        </div>
+
+    </div>
+
+    <div class="dbl">
+        <a href="https://www.bewakoof.com/tribe">
+            <img src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-3-1672040129.jpg" alt="">
+        </a>
+        <a href="https://www.bewakoof.com/vote">
+            <img src="https://images.bewakoof.com/uploads/grid/app/Desktop-Strip-3-1669022420.jpg" alt="">
+        </a>
+    </div>
+
+</body>
+</html>

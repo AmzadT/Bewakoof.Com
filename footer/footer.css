@@ -1,0 +1,188 @@
+#footer{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #181818;
+}
+
+h2{
+   color:#fdd835;
+   font-family: sans-serif;
+   font-weight: 600;
+   font-size: 23px;
+   margin-left: 9%;
+}
+.icn{
+    font-size: 5px;
+    margin-left: -5px;
+}
+
+.main{
+    width: 85%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+
+.same{
+    width: 220px;
+    height: auto;
+    margin-left: 20px;
+}
+
+#a{
+    color: #ffffffe6;
+    font-size: 14px;
+    font-family: monospace;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+h5{
+    color:#fdd835;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.ifi{
+    color: #ffffffe6;
+    font-size: 18px;
+}
+
+.fi{
+    color: #ffffffe6;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+input{
+    border: none;
+    padding: 6px 12px;
+    border-bottom: 1px solid #fdd835;
+    background-color: transparent;
+    width: 35%;
+    height: 20px;
+}
+#myInput:focus{
+    border: none;
+    color: orangered;
+}
+
+#button{
+    background: #fdd835;
+    border: 1px solid #fdd835;
+    color: #000;
+    margin-left: -5px;
+    height: 34px;
+    width: 35%;
+    cursor: pointer;
+}
+
+.last{
+    width: 250px;
+    height: auto;
+    margin-left: 30px;
+}
+
+#footer-title{
+    width: 85%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.imgs{
+    height: 30px;
+    width: 100px;
+}
+.gm{
+    height: 18px;
+    width: 250px;
+}
+/* .fix{
+    margin-top: -10px;
+} */
+
+.fix > h5{
+    margin-top: 2px;
+}
+.mr{
+    margin-right: 3px;
+}
+.hr1{
+    width: 80%;
+    color: gray;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+#head{
+    width: 85%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 15px;
+
+}
+
+#head > div > a{
+    font-family: monospace;
+    word-spacing: -5px;
+    letter-spacing: 0.5px;
+}
+
+.h2s{
+   font-size: 18px;
+   color: #ffffff;
+   margin-left: -1px;
+   font-weight: 700;
+   font-family: sans-serif;
+}
+.last > a > h2{
+    margin-left: 1px;
+}
+.h2s1{
+    color: #51cccc;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+#paragraph{
+    width: 82.5%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#paragraph > p{
+    color: #ffffffe6;
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+#paragraph > h2{
+    color: #ffffffe6;
+    font-family: sans-serif;
+    font-size: 19px;
+    margin-left: 1px;
+    letter-spacing: 1px;
+}
+#paragraph > p > a{
+    color: #51cccc;
+    font-size: 18px;
+    font-family: monospace;
+    word-spacing: -3px;
+}
+#paragraph > p > a:hover{
+    color: orangered;
+}

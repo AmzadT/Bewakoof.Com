@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="./footer.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div id="footer">
+    
+    <a id="a" href="https://www.bewakoof.com/"><h2>Bewakoof <i class="fa-regular fa-registered icn"></i> </h2></a>
+
+    <div class="main">
+
+        <div class="same">
+            <h5>CUSTOMER SERVICE</h5>
+            <a id="a" href="https://www.bewakoof.com/contact-us/order-delivery-payment">Contact Us</a><br>
+            <a id="a" href="https://www.bewakoof.com/login?ref=/myaccount/orders">Track Order</a><br>
+            <a id="a" href="https://www.bewakoof.com/login?ref=/myaccount/orders?status=returned">Return Order</a><br>
+            <a id="a" href="https://www.bewakoof.com/contact-us/order-delivery-payment">Cancel Order</a><br>
+        </div>
+
+        <div class="same">
+            <h5>COMPANY</h5>
+            <a id="a" href="https://www.bewakoof.com/about-us/our-story">About Us</a><br>
+            <a id="a" href="https://www.bewakoof.com/careers">We're Hiring</a><br>
+            <a id="a" href="https://www.bewakoof.com/terms-and-conditions">Terms & Conditions</a><br>
+            <a id="a" href="https://www.bewakoof.com/privacy-policy-and-disclaimer">Privacy Policy</a><br>
+            <a id="a" href="https://www.bewakoof.com/blog/">Blog</a><br>
+        </div>
+
+        <div class="same">
+            <h5>CONNECT WITH US</h5>
+            <i class="fa-brands fa-square-facebook ifi"><a id="a" href="https://www.facebook.com/bewakoofcom"> 4.7M People Like this</a></i><br><br>
+            <i class="fa-brands fa-instagram ifi"><a id="a" href="https://www.instagram.com/bewakoofofficial/"> 1M Followers</a></i><br><br>
+            
+            <a id="a" href="https://twitter.com/bewakoof"><i class="fa-brands fa-twitter fi"></i></a>
+
+            <a id="a" href="https://in.pinterest.com/bewakoof/"><i class="fa-brands fa-pinterest fi"></i></a>
+
+            <a id="a" href="https://www.snapchat.com/add/bewakoof_tv"><i class="fa-brands fa-snapchat fi"></i></a>
+            
+            <a id="a" href="https://apps.apple.com/in/app/bewakoof-fashion-shopping-app/id1100190514"><i class="fa-brands fa-apple fi"></i></a>
+        </div>
+
+        <div class="last">
+            <h5>KEEP UP TO DATE</h5>
+            <input type="text" type="number" placeholder="Enter Email id">
+            <a id="a" href=""><button id="button">SUBSCEIBE</button></a>
+        </div>
+
+    </div>
+
+    <div id="footer-title">
+
+        <div class="same">
+            <i class="fa-regular fa-house-person-return"><a id="a" href="">15 Days Return Policy*</a></i><br><br>
+            <a id="a" href="">Cash on delivery*</a>
+
+        </div>
+           
+        <div class="same fix">
+            <h5>DOWNLOAD THE APP</h5>
+            <a id="a" href="https://play.google.com/store/apps/details?id=com.bewakoof.bewakoof&hl=en&pli=1"><img class="imgs mr" src="https://images.bewakoof.com/web/app_android_v1.png" alt=""></a>
+
+            <a id="a" href="https://apps.apple.com/in/app/bewakoof-fashion-shopping-app/id1100190514"> <img class="imgs" src="https://images.bewakoof.com/web/app_ios_v1.png" alt=""></a>
+        </div>
+
+        <div class="same fix">
+            <h5>100% SECURE PAYMENT</h5>
+            <img class="gm" src="https://images.bewakoof.com/web/secure-payments-image.png" alt="">
+        </div>
+        <div class="last"></div>
+
+    </div>
+
+    <hr class="hr1">
+
+    <div id="head">
+
+        <div class="same">
+
+            <a id="a" href="https://www.bewakoof.com/men-clothing"><h2 class="h2s">MEN'S CLOTHING</h2></a><br>
+
+            <a id="a" href="https://www.bewakoof.com/top-wear-for-men">Top Wear</a><br>
+            <a id="a" href="https://www.bewakoof.com/men-new-arrivals-collection">Men's New Arrivals</a><br>
+            <a id="a" href="https://www.bewakoof.com/men-t-shirts">Men's Half Sleeve T-Shirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/men-hoodies-sweatshirts">Men's Hoodies & Sweatshirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/men-full-sleeve-t-shirts">Men's Long Sleeve T-shirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/men-printed-tshirts">Men's Printed T-shirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/men-plain-t-shirts">Men's Plain T-shirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/men-vests">Men's Vests</a><br>
+            <a id="a" href="https://www.bewakoof.com/polo-t-shirts-for-men">Men's Polo T-Shirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/men-kurtas">Men's Kurtas</a><br>
+            <a id="a" href="https://www.bewakoof.com/mens-combo-t-shirt">Men's Combo T-Shirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/men-shirts">Men's Shirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/men-nightwear">Men's Nightwear</a><br>
+            <a id="a" href="https://www.bewakoof.com/plus-size-store-for-men">Men's Plus Size Store</a><br><br>
+            <a id="a" href="https://www.bewakoof.com/men-bottom-wear-collection">Bottom Wear</a><br>
+            <a id="a" href="https://www.bewakoof.com/men-pajamas">Men's Pajamas</a><br>
+            <a id="a" href="https://www.bewakoof.com/men-boxer-shorts">Men's Boxer Shorts</a><br>
+            <a id="a" href="https://www.bewakoof.com/men-shorts">Men's Shorts</a><br>
+            <a id="a" href="https://www.bewakoof.com/men-joggers">Men's Track Pants</a><br>
+            <a id="a" href="https://www.bewakoof.com/men-pants">Men's Pants</a><br><br>
+            <a id="a" href="">Featured</a><br>
+            <a id="a" href="https://www.bewakoof.com/men-flip-flops">Men's Flip Flops</a><br>
+            <a id="a" href="https://www.bewakoof.com/men-sliders">Men's Sliders</a><br>
+            <a id="a" href="https://www.bewakoof.com/marvel-merchandise">Marvel T-Shirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/disney-merchandise">Disney T-Shirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/avengers-merchandise">Avengers T-Shirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/star-wars-merchandise">Star Wars T-Shirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/batman-merchandise">Batman T-Shirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/superman-merchandise">Superman T-Shirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/joker-merchandise">Joker T-Shirts</a><br>
+
+        </div>
+
+        <div class="same">
+
+            <a id="a" href="https://www.bewakoof.com/women-clothing"><h2 class="h2s">WOMEN'S CLOTHING</h2></a><br>
+
+            <a id="a" href="https://www.bewakoof.com/top-wear-for-women">Women's Top Wear</a><br>
+            <a id="a" href="https://www.bewakoof.com/women-new-arrivals-collection">Women's New Arrivals</a><br>
+            <a id="a" href="https://www.bewakoof.com/women-t-shirts">Women's T-Shirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/women-hoodies-sweatshirts">Women's Hoodies & Sweatshirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/women-dresses">Women's Dresses</a><br>
+            <a id="a" href="https://www.bewakoof.com/women-3-4-sleeve-t-shirts">Women's 3/4 Sleeve T-Shirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/women-kurtas">Women's Kurtis</a><br>
+            <a id="a" href="https://www.bewakoof.com/womens-combo-t-shirt">Women's Combo T-Shirts</a><br>
+            <a id="a" href="https://www.bewakoof.com/women-nightwear">Women's Nightwear</a><br>
+            <a id="a" href="https://www.bewakoof.com/plus-size-store-for-women">Women's Plus Size Store</a><br><br>
+            <a id="a" href="https://www.bewakoof.com/bottom-wear-for-women">Women's Bottom Wear</a><br>
+            <a id="a" href="https://www.bewakoof.com/women-pajamas">Women's Pajamas</a><br>
+            <a id="a" href="https://www.bewakoof.com/women-boxer-shorts">Women's Boxer Shorts</a><br>
+            <a id="a" href="https://www.bewakoof.com/womens-denims">Women's Jeans</a><br>
+            <a id="a" href="https://www.bewakoof.com/women-joggers-sweatpants">Women's Joggers</a><br>
+            <a id="a" href="https://www.bewakoof.com/women-shorts">Women's Shorts</a><br><br>
+            <a id="a" href="https://www.bewakoof.com/bags">BAGS</a><br>
+            <a id="a" href="https://www.bewakoof.com/laptop-bags">Laptop Bags</a><br>
+            <a id="a" href="https://www.bewakoof.com/small-backpacks">Small Backpacks</a><br><br>
+            <a id="a" href="">Featured</a>
+            <a id="a" href="https://www.bewakoof.com/women-sliders">Women's Slides</a>
+            <a id="a" href="https://www.bewakoof.com/women-flip-flops">Women's Flip Flops</a>
+
+        </div>
+
+        <div class="same">
+
+            <a id="a" href="https://www.bewakoof.com/mobile-covers-india"><h2 class="h2s">MOBILE COVERS</h2></a><br>
+
+            <a id="a" href="">Brands</a><br>
+            <a id="a" href="https://www.bewakoof.com/mobile-covers-india/apple-cases-back-covers">Apple</a><br>
+            <a id="a" href="https://www.bewakoof.com/mobile-covers-india/realme-cases-back-covers">Realme</a><br>
+            <a id="a" href="https://www.bewakoof.com/mobile-covers-india/samsung-cases-back-covers">Samsung</a><br>
+            <a id="a" href="https://www.bewakoof.com/mobile-covers-india/xiaomi-cases-back-covers">Xiaomi</a><br>
+            <a id="a" href="https://www.bewakoof.com/mobile-covers-india/oneplus-cases-back-covers">Oneplus</a><br>
+            <a id="a" href="https://www.bewakoof.com/mobile-covers-india/vivo-cases-back-covers">Vivo</a><br>
+            <a id="a" href="https://www.bewakoof.com/mobile-covers-india/oppo-cases-back-covers">Oppo</a><br>
+
+        </div>
+
+        <div class="last">
+
+            <a id="a" href="https://www.bewakoof.com/fanbook-testimonial-reviews"><h2 class="h2s1">FANBOOK</h2></a>
+            <a id="a" href="https://www.bewakoof.com/campaign/delights-coupons-discounts-offers-sale"><h2 class="h2s1">OFFERS</h2></a>
+            <a id="a" href="https://www.bewakoof.com/sitemap"><h2 class="h2s1">SITEMAP</h2></a>
+
+        </div>
+
+    </div>
+
+    <div id="paragraph">
+       <h2>BEWAKOOF <i class="fa-regular fa-registered icn"></i> THE NEW AGE ONLINE SHOPPING EXPERIENCE.</h2>
+       <p>Founded in 2012, Bewakoof <i class="fa-regular fa-registered icn"></i> is a lifestyle fashion brand that makes creative, distinctive fashion for the trendy, contemporary <br> Indian. Bewakoof <i class="fa-regular fa-registered icn"></i> was created on the principle of creating impact through innovation, honesty and thoughtfulness.</p>
+
+       <p>With a team of 400 members, and 2mn products sold till date. We like to experiment freely, which allows us to balance <br> creativity and relatability, and our innovative designs. Our range of products is always fresh and up-to-date, and we clock sales <br> of over 1 lakh products a month. Our innovation focus extends to our operations as well. We are vertically integrated, <br> manufacture our own products, and cut out the middleman wherever possible. This direct-to-consumer model allows us to <br> create high-quality fashion at affordable prices. A thoughtful brand, we actively attempt to minimize our environmental <br> footprint and maximize our social impact. These efforts are integrated right into our day-to-day operations, from rainwater <br> harvesting to paper packaging to employee benefits. To create an accessible, affordable and thoughtful experience of online <br> shopping in India.</p>
+
+       <h2>ONLINE SHOPPING AT BEWAKOOF <i class="fa-regular fa-registered icn"></i> IS HASSLE-FREE, CONVENIENT AND SUPER-EXCITING!</h2>
+
+       <p>Online Shopping has always been a fun and exciting task for most and more so when the shopping mall is none other than <br> your own house. We have all had days when we have planned trips to the clothing store in advance, dreaming about what we <br> would buy once we get there. Now we wouldnt think twice before indulging in some online shopping. Well, cut to todays time <br> and age, you can do all this from the comfort of your home while enjoying many online shopping offers, right from amazing <br> deals and discounts to one of the most robust user interface amongst most online shopping sites in India, with many <br> shopping filters to make your shopping experience truly hassle free. This in our own words is what we call Bewakoof.com.</p>
+
+       <p>Bewakoof <i class="fa-regular fa-registered icn"></i>, THE place to be when it comes to the coolest in online fashion, offers you fine, high-quality merchandise go ahead <br> and indulge in a bit of online shopping for men and womens fashion. So browse through the exciting categories we have on <br> offer from mens fashion to basic mens clothing as well as wide variety in womenswear and womens clothes to the amazing <br> range of accessories, fill up your carts and get fast home delivery for all orders. All of this topped with our exclusive online <br> shopping offers makes for an exciting, irresistible and uber cool combo! You can even gift some to your near and dear ones <br> while being absolutely certain that it will put a smile on their faces.</p>
+
+       <h2>BEWAKOOF.COM: THE QUIRKIEST ONLINE SHOPPING SITES OF ALL!</h2>
+
+       <p>Online fashion is definitely more accessible with Bewakoof.com. Explore the latest collections in Marvel t-shirts including <br> avengers t-shirts and captain America t-shirts in <a id="a" href="https://www.bewakoof.com/official-collaborations-collection">official merchandise.</a>  Apart from these, quirkiest of T-shirts that you wont find <br> on any online shopping sites in India are showcased at Bewakoof.com. If your wardrobe has been longing for a cool overhaul <br> then bewakoof.com will certainly be your best bet amongst all online shopping sites. Also, take a tour of our bewakoof <i class="fa-regular fa-registered icn"></i> blog to <br> stay abreast with the latest runway trends and be a trendsetter among your immediate circles. What we wear speaks volumes <br> of us they say. But what if what you wore actually spoke what your mood was! Havent we all wondered where we could get <br> those quirky t-shirts and sport them with confidence? Sure otherwise getting them made or even buying them from <br> otherwise expensive online shopping sites for clothes may cost you substantially but with Bewakoof.com, you will understand <br> that you do not have to spend a fortune on online fashion to look great. Sliders, joggers, sweatshirts, bag and bag packs and so <br> much more are just some of the other items you can grab hold of here.</p>
+
+       <h2>AVAIL OF ONLINE SHOPPING BENEFITS AT BEWAKOOF.COM AND YOULL SHOP NOWHERE ELSE!</h2>
+
+        <p>Choose your product, get it ordered online, and we ensure that its delivery happens right at your doorstep anywhere in India. <br> You just need to take care of the payment for the product from the comfort of your home, while we ensure free shipping all <br> the time on almost everything with no strings attached. For any second thoughts after purchase, we have in place a return <br> policy as well. One of the best you will find on any online shopping sites in India. For your online shopping experience to be <br> safe and risk-free, we offer Cash On Delivery (COD) facility too. So you dont have to worry anymore about your hard earned <br> money being stuck when you buy clothes online at bewakoof.com. Avail exciting online shopping offers like <a id="a" href="https://www.bewakoof.com/design-of-the-day">designs of the day</a> <br> and colour of the month when you shop with us. Make sure to use our easy 15-day returns policy, card or cash on delivery <br> option and other customer-friendly features. A comprehensive sizing guide and detailed product descriptions coupled with <br> high-resolution product shots will give you all the information to make the right buying decision. Give your wardrobe the <br> much-needed upgrade with uber cool clothing head to Bewakoof.com for a great online shopping india experience now! <br> Could you have asked for more?</p>
+
+        <h2>DONT MISS OUT ON ACCESSORIES AVAILABLE ON OUR MULTI-FACETED ONLINE STORE!</h2>
+
+        <p>We dont just offer you exciting options in online fashion but also give you amazing accessories with really cool bags and bag <br> packs to choose from. Our bags and backpacks are compact, hassle-free and easy to stuff things in. And all of this with the <br> swag that you get to carry along with it. Cool designs are what form a major part of our online fashion and we also ensure our <br> accessories section doesnt feel left out!</p>
+
+        <p>As for our accessories collection, they are also manufactured with impeccable quality materials. Our <a id="a" href="https://www.bewakoof.com/mobile-covers-india">mobile covers</a> are made <br> from hard and durable polycarbonate, with a matte finish that will make for a great protection for your phone with the rough <br> use that we put them through nowadays.</p>
+
+        <h2>DESIGN OF THE DAY- THE COOLEST FEATURE EVER!</h2>
+
+        <p>Who said good and cool t-shirts have to expensive? We bring newer, cooler and more youth oriented designs everyday. Yes! <br> Everyday you get a new design to explore and buy. Although all our t-shirts are at an extremely affordable price, we decided to <br> slash them down even further. But there is a catch. It is only for those designs and these exclusive prices are only valid for for a <br> duration of 24 hours! Designs refresh every day at 3pm and are valid only for 24 hours. So you need to hurry and grab one fast <br> before it ends. Because we believe everyone needs to have a fair chance at all of our fresh designs of the day.</p>
+
+        <h2>BEWAKOOF.COM: THE UBER COOL ONLINE FASHION STORE FOR THE YOUTH</h2>
+
+        <p>We, at Bewakoof.com, have all that you need to glam up your cool quotient. From an extensive range of plus size clothing, <br> <a id="a" href="https://www.bewakoof.com/men-shirts">casual shirts for men</a> and accessories for everyone, we purvey diversity of choices in online shopping india platform has to offer <br> under one umbrella. The range of apparels like <a id="a" href="https://www.bewakoof.com/men-t-shirts">men t-shirts</a>, joggers, sliders, Henley shirts, Polo t-shirts, Oxford pants and more <br> provide an array of options for the online customer to create a ravishing ensemble from. We try to target all kinds of customers <br> and cater to their needs and preferences. Communication is the key to our functioning. Your Bewakoof <i class="fa-regular fa-registered icn"></i> Online fashion Shop <br> has arrived! Do not miss the attractive online shopping offers everyday. Work your fashion with the wide range of apparels <br> available only one click away! Make a statement with our best t-shirts online! Get more, pay less!</p>
+
+        <h2>OUR PHILOSOPHY</h2>
+
+        <p>We believe in creating the kind of fashion, that makes you stand out as they are in line with the latest local and global trends of <br> the industry, but also at the same time offer value for money functionality, with quality materials and comfortable and <br> flattering prints. We try to look into the psyche of our customers, and try to get inspired by the conversations and experiences <br> around us while creating our graphics, to ensure that they are relatable. We believe in constant and consistent innovation to <br> ensure that our fans get nothing short of the bets at affordable rates! While most people do not know, we do not outsource <br> the manufacturing of our products, everything from the conception of the designs to the manufacture and the styling that <br> you see on the photographs of the banners and product pages of our website all happen in house! We go from yarn to <br> product and since we 're vertically integrated and bring fashion from us directly to your doorstep without any middlemen that <br> also further ensures reliability because for us it is not just about the money but about building the trust and credibility in our <br> fans about our brand. We also make sure to decrease the impact on environment and are building initiatives that will help us <br> with the same, for now by optimizing our processes to use only as much as we need from nature, rain water harvesting and <br> recycling the water from our RO water facility, because we believe that the spirit of Bewakoof <i class="fa-regular fa-registered icn"></i> is about creating an impact by <br> breaking conventions and having a different perspective!</p>
+    </div>
+
+   </div>
+</body>
+</html>
